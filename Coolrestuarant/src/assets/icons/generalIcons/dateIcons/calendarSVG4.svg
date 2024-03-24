@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>date</title>
+    <g id="Sales" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="8.4" transform="translate(-35.000000, -1173.000000)" stroke="#222222" stroke-width="0.5">
+            <g id="Add-Delivery-time" transform="translate(36.000000, 1170.000000)">
+                <g id="_9" transform="translate(0.000000, 4.000000)">
+                    <rect id="Rectangle" x="0.00477086743" y="0" width="10.9596727" height="10.983617" rx="2.6"></rect>
+                    <line x1="3.65799509" y1="2.57446809" x2="7.35928805" y2="2.57446809" id="Path"></line>
+                    <line x1="8.70521277" y1="2.57446809" x2="10.7962029" y2="2.57446809" id="Path"></line>
+                    <line x1="0.197045827" y1="2.57446809" x2="2.31207038" y2="2.57446809" id="Path"></line>
+                    <rect id="Rectangle" x="2.4562766" y="1.61489362" width="1.17768412" height="1.91914894" rx="0.588842062"></rect>
+                    <rect id="Rectangle" x="7.38332242" y="1.61489362" width="1.17768412" height="1.91914894" rx="0.588842062"></rect>
+                    <rect id="Rectangle" x="1.71121113" y="4.8212766" width="7.59486088" height="4.45617021"></rect>
+                    <line x1="4.25885434" y1="4.91489362" x2="4.25885434" y2="9.17446809" id="Path"></line>
+                    <line x1="6.75842881" y1="4.91489362" x2="6.75842881" y2="9.17446809" id="Path"></line>
+                    <line x1="9.25800327" y1="7.04468085" x2="1.75927987" y2="7.04468085" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

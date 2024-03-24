@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="25px" viewBox="0 0 32 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title></title>
+    <g id="8.-Delivery-process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="FontAwesome" font-size="30" font-weight="normal">
+        <g id="8.12" transform="translate(-95.000000, -1065.000000)" fill="#FFFFFF" stroke="#3B5998">
+            <g id="Content-Order" transform="translate(31.000000, 99.000000)">
+                <g id="message-button" transform="translate(7.000000, 949.000000)">
+                    <text id="">
+                        <tspan x="58" y="39"></tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

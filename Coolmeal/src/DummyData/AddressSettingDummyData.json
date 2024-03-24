@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "id": 0,
+            "isActive": true,
+            "address": "81 Charter Str. Boston, MA USA"
+        },
+        {
+            "id": 1,
+            "isActive": false,
+            "address": "300 Harrison Ave. Boston, MA USA"
+        }
+    ]
+}

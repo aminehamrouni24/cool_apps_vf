@@ -1,0 +1,81 @@
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+
+platform :ios, '10.0'
+
+target 'DobuleRestaurant' do
+
+  permissions_path = '../node_modules/react-native-permissions/ios'
+   pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+   pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary.podspec"
+
+
+  config = use_native_modules!
+  use_react_native!(:path => config["reactNativePath"])
+
+
+
+  target 'DobuleRestaurantTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable these next few lines.
+ use_flipper!({'Flipper' => '0.75.1', 'Flipper-Folly' => '2.5.3', 'Flipper-RSocket' => '1.3.1'}) # should match the version of your Flipper client app
+  post_install do |installer|
+    flipper_post_install(installer)
+    fix_deployment_target(installer)
+
+  end
+end
+
+target 'DobuleRestaurant-tvOS' do
+  # Pods for DobuleRestaurant-tvOS
+
+  target 'DobuleRestaurant-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
+
+# React Native Maps dependencies
+ rn_maps_path = '../node_modules/react-native-maps'
+ pod 'react-native-google-maps', :path => rn_maps_path
+ pod 'GoogleMaps'
+ pod 'Google-Maps-iOS-Utils'
+
+ use_native_modules!
+
+def fix_deployment_target(installer)
+  return if !installer
+  project = installer.pods_project
+  project_deployment_target = project.build_configurations.first.build_settings['IPHONEOS_DEPLOYMENT_TARGET']
+
+  puts "Make sure all pods deployment target is #{project_deployment_target.green}"
+  project.targets.each do |target|
+    puts "  #{target.name}".blue
+    target.build_configurations.each do |config|
+      old_target = config.build_settings['IPHONEOS_DEPLOYMENT_TARGET']
+      new_target = project_deployment_target
+      next if old_target == new_target
+      puts "    #{config.name}: #{old_target.yellow} -> #{new_target.green}"
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = new_target
+    end
+  end
+end
+
+def find_and_replace(dir, findstr, replacestr)
+  Dir[dir].each do |name|
+      text = File.read(name)
+      replace = text.gsub(findstr,replacestr)
+      if text != replace
+          puts "Fix: " + name
+          File.open(name, "w") { |file| file.puts replace }
+          STDOUT.flush
+      end
+  end
+  Dir[dir + '*/'].each(&method(:find_and_replace))
+end

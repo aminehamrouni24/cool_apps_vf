@@ -1,0 +1,70 @@
+import CouponListScreen from '../screens/CouponModuleMenu/CouponListScreen/CouponListScreen';
+
+const Routes = {
+  //All Screens
+  AddCardDetails: 'AddCardDetails',
+  CategoryConfigScreen: 'CategoryConfigScreen',
+  ProductConfigScreen: 'ProductConfigScreen',
+  CategoryDescriptionScreen: 'CategoryDescriptionScreen',
+  AddNewPaypal: 'AddNewPaypal',
+  AddPayoutMethods: 'AddPayoutMethods',
+  ChangePassword: 'ChangePassword',
+  ChatScreen: 'ChatScreen',
+  ChooseLanguage: 'ChooseLanguage',
+  CompanyInformation: 'CompanyInformation',
+  CouponConfigScreen: 'CouponConfigScreen',
+  CreateAccountSlideshow: 'CreateAccountSlideshow',
+  CreditCardSettings: 'CreditCardSettings',
+  DeliveryReviewScreen: 'DeliveryReviewScreen',
+  FAQScreen: 'FAQScreen',
+  Delivery: 'Delivery',
+  ForgotPassword: 'ForgotPassword',
+  LookingByMapScreen: 'LookingByMapScreen',
+  MyWalletHomeScreen: 'MyWalletHomeScreen',
+  OTPVerification: 'OTPVerification',
+  OnlineSupport: 'OnlineSupport',
+  OrderDetailScreen: 'OrderDetailScreen',
+  Other: 'Other',
+  PersonalInformation: 'PersonalInformation',
+  PrivacyPolicy: 'PrivacyPolicy',
+  Registration: 'Registration',
+  SendOTPVerification: 'SendOTPVerification',
+  Settings: 'Settings',
+  StoreReviewScreen: 'StoreReviewScreen',
+  SurrenderActScreen: 'SurrenderActScreen',
+  TermsOfUse: 'TermsOfUse',
+  ProductsHomeScreen: 'ProductsHomeScreen',
+  Welcome: 'Welcome',
+  WireTransfer: 'WireTransfer',
+  WithdrawHistoryScreen: 'WithdrawHistoryScreen',
+  WizardHomeScreen: 'WizardHomeScreen',
+
+  //Tab Menus
+  ProductsTabMenu: 'ProductsTabMenu',
+  OrderHistoryTabMenu: 'OrderHistoryTabMenu',
+  PaymentTabMenu: 'PaymentTabMenu',
+  ProfileTabMenu: 'ProfileTabMenu',
+
+  //Home Screens for Modular Menus
+  CouponListScreen: 'CouponListScreen',
+  DeliveryHomeScreen: 'DeliveryHomeScreen',
+  FavoriteProductsHomeScreen: 'FavoriteProductsHomeScreen',
+  OrderHistoryHomeScreen: 'OrderHistoryHomeScreen',
+  PaymentMethodsHomeScreen: 'PaymentMethodsHomeScreen',
+  ProfileHomeScreen: 'ProfileHomeScreen',
+  SupportHomeScreen: 'SupportHomeScreen',
+
+  //Module Menus
+  CouponModuleMenu: 'CouponModuleMenu',
+  DeliveryModuleMenu: 'DeliveryModuleMenu',
+  OrderHistoryModuleMenu: 'OrderHistoryModuleMenu',
+  OtherModuleMenu: 'OtherModuleMenu',
+  PaymentMethodModuleMenu: 'PaymentMethodModuleMenu',
+  ProfileModuleMenu: 'ProfileModuleMenu',
+  SettingModuleMenu: 'SettingModuleMenu',
+  SupportModuleMenu: 'SupportModuleMenu',
+  ProductsModuleMenu: 'ProductsModuleMenu',
+  WizardModuleMenu: 'WizardModuleMenu',
+};
+
+export default Routes;

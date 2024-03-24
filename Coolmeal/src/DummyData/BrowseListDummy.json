@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "id": 0,
+            "title": "Asian"
+        },
+        {
+            "id": 1,
+            "title": "Georgian"
+        },
+        {
+            "id": 2,
+            "title": "Indian"
+        },
+        {
+            "id": 3,
+            "title": "Italian"
+        },
+        {
+            "id": 4,
+            "title": "Japanese"
+        },
+        {
+            "id": 5,
+            "title": "Mexican"
+        },
+        {
+            "id": 6,
+            "title": "Seafood"
+        },
+        {
+            "id": 7,
+            "title": "Thai"
+        },
+        {
+            "id": 8,
+            "title": "Vegetarian"
+        }
+    ]
+}

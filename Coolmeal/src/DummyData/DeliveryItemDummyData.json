@@ -1,0 +1,18 @@
+{
+    "estimatedDeliveryTime": {
+        "from": "13:20",
+        "to": "13:35"
+    },
+    "accepted": {
+        "isActive": false
+    },
+    "onTheWay": {
+        "isActive": false
+    },
+    "pickedUp": {
+        "isActive": false
+    },
+    "delivered": {
+        "isActive": false
+    }
+}

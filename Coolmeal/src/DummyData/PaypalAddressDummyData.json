@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "id": 0,
+            "isActive": true,
+            "email": "nata@gmail.com"
+        },
+        {
+            "id": 1,
+            "isActive": false,
+            "email": "tiko@gmail.com"
+        }
+    ]
+}
